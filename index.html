@@ -3,45 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Notifications page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Notifications 3
+  <main>
+    
+      <header>
+        <h1>Notifications <span>3</span></h1>
+        <p>Mark all as read</p>
+      </header>
+      <summary>
+        <!-- Chat 01 -->
+        <article>
+              <div class="main-content">
+                <img src="assets/images/avatar-mark-webber.webp" alt="Avatar1">
+                
+                <div class="sub-content">
+                  <p><strong>Mark Webber</strong>  reacted to your recent post<b class="gray-msg"> My first tournament today!</b></p>
+                  <p>1m ago</p>
+                </div>
+                <div class="notify"></div>
+              </div>
+          
+        </article>
 
-  Mark all as read
+        <!-- Chat 02 -->
+        <article>
+          
+            <div class="main-content">
+              <img src="assets/images/avatar-angela-gray.webp" alt="Avatar2">
+              <sub-content>
+                <p><strong>Angela Gray</strong> followed you</p>
+                <p>5m ago</p>
+              </sub-content>
+              <div class="notify"></div>
+            </div>
+        </article>
+        
+        <!-- Chat 03 -->
+        <article>
+          <div class="main-content">
+            <img src="assets/images/avatar-jacob-thompson.webp" alt="Avatar3">
+            <div class="sub-content">
+              <p><strong>Jacob Thompson</strong> has joined your group <b class="bold-blue">Chess Club</b></p>
+              <p>1 day ago</p>
+            </div>
+            <div class="notify"></div>
+          </div>
+        </article>
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+        <!-- Chat 04 -->
+        <article>
+          <div class="main-content">
+            <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Avatar4">
+            <div class="sub-content">
+              <p><strong>Rizky Hasanuddin</strong> sent you a private message</p>
+              <p>5 days ago</p>
+            </div>
+          </div>
+          
+          <p class="opened-Chat msg">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+            I'm already having lots of fun and improving my game.
+          </p>
+        </article>
 
-  Angela Gray followed you
-  5m ago
+        
+        <!-- Chat 05 -->
+        <article>
+          <div class="main-content">
+            <img src="assets/images/avatar-kimberly-smith.webp" alt="Avatar5">
+            <div class="sub-content">
+              <p class="msg"><strong>Kimberly Smith</strong> commented on your picture</p>
+              <p>1 week ago</p>
+            </div>
+            <img src="\assets\images\image-chess.webp" alt="chess" class="pic">
+          </div>
+        </article>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+        <!-- Chat 06 -->
+        <article>
+          <div class="main-content">
+            <img src="assets/images/avatar-nathan-peterson.webp" alt="Avatar6">
+            <div class="sub-content">
+              <p class="msg"><strong>Nathan Peterson</strong> reacted to your recent post <b class="gray-msg">5 end-game strategies to increase your win rate</b></p>
+              <p>2 weeks ago</p>
+            </div>
+          </div>
+        </article>
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
+        <!-- Chat 07 -->
+        <article>
+          <div class="main-content">
+            <img src="assets/images/avatar-anna-kim.webp" alt="Avatar7">
+            <div class="sub-content">
+              <p><strong>Anna Kim</strong> left the group <b class="bold-blue">Chess Club</b></p>
+              <p>2 weeks ago</p>
+            </div>
+          </div>
+        </article>
+      </summary>
+    
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

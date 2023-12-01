@@ -1,0 +1,237 @@
+@font-face {
+    font-family: "PlusJakartaSans";
+    src: url("/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf")
+    format(truetype);
+    font-display: swap;
+}
+:root{
+    --clr-primary-red:hsl(1, 90%, 64%);
+    --clr-primary-blue: hsl(219, 85%, 26%);
+
+
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue1: hsl(211, 68%, 94%);
+    --Light-grayish-blue2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue:hsl(224, 21%, 14%);
+
+    --font-family-default: "PlusJakartaSans" ;
+    --font-wght-medium:500;
+    --font-wght-extraBold:800;
+
+    --fs-basic: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+    --fs-100: clamp(1.35rem, 1.2752rem + 0.3192vw, 1.5625rem);
+    --fs-200: clamp(1.62rem, 1.5027rem + 0.5005vw, 1.9531rem);
+    --fs-300: clamp(1.9438rem, 1.7686rem + 0.7474vw, 2.4413rem);
+    --fs-400: clamp(2.3325rem, 2.0792rem + 1.0808vw, 3.0519rem);
+
+    
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--font-family-default);
+    /* background-color:brown; */
+    background-color: var(--clr-Very-light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 2.5vh;
+}
+
+@media screen and (min-width:375px) {
+    body{
+        max-width: 100vw;
+        font-size:3vh;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-White);
+    width: 100%;
+    margin: 4rem;
+    padding-inline:1.5rem ;
+    padding-top: 1.5rem;
+    max-width: 750px;
+    gap:1.5rem;
+    border: 2px solid transparent;
+    border-radius: 9px;
+}
+
+/* Header Section */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin-bottom: 0.5rem;
+}
+p{
+    color: var(--Grayish-blue) ;
+    font-size:80%;
+}
+
+header h1{
+    font-size: var(--fs-basic);
+    font-weight: var(--font-wght-extraBold);
+    
+}
+header p{
+    font-size:medium;
+    font-weight: var(--font-wght-medium);
+}
+span{
+
+    background-color:var(--clr-primary-blue);
+    color:var(--clr-White);
+    font-size:80%;
+    
+    padding-inline:0.5rem;
+    margin-left:0.35rem;
+
+    border: 1px solid transparent;
+    border-radius:5px;
+}
+
+/* Chat Section*/
+
+summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:0.25rem;
+}
+strong{
+    color: var(--Very-dark-blue);
+    font-weight: var(--font-wght-extraBold);
+    font-size:14px;
+    padding-right: 0.5rem;
+}
+
+/* For Profile Photos */
+summary img{
+    max-width: 40px;
+    width: 100%;
+    margin-right:0.7rem;
+    object-fit: contain;
+    
+}
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    
+}
+.sub-content{
+    display: flex;
+    flex-direction: column;
+
+
+}
+/* For chat1 & chat6*/
+.gray-msg {
+    font-weight: var(--font-wght-extraBold);
+    color: var(--Dark-grayish-blue);
+}
+/* For chat3 & 7*/
+.bold-blue{
+    color: var(--clr-primary-blue);
+    font-weight: var(--font-wght-extraBold);
+}
+
+/* For Chat 5 adding chess image */
+.pic{
+    margin-left: 70px;
+    object-fit: contain;
+
+}
+/* Notification From Chat1, Chat2 $ Chat3*/
+summary > :nth-child(1){
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 1rem;
+    width:100%;
+    background-color: var(--Light-grayish-blue1);
+    
+
+}
+summary > :nth-child(2){
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 1rem;
+    width:100%;
+    background-color: var(--Light-grayish-blue1);
+    
+}
+summary > :nth-child(3){
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 1rem;
+    width:100%;
+    background-color: var(--Light-grayish-blue1);
+    
+}
+
+summary > :nth-child(4){
+
+    padding: 1rem;
+    width:100%;
+    
+}
+summary > :nth-child(5){
+
+    padding: 1rem;
+    width:100%;
+    
+}
+summary > :nth-child(6){
+
+    padding: 1rem;
+    width:100%;
+    
+}
+summary > :nth-child(7){
+    padding: 1rem;
+    width:100%;
+    
+}
+
+.opened-Chat{
+    border: 1px solid var(--Light-grayish-blue2);
+    border-radius: 3px;
+    padding: 0.75rem;
+    margin-left: 3rem;
+    font-size:80%;
+    color: var(--Grayish-blue);
+    
+}
+.notify{
+    background-color:var(--clr-primary-red);
+    border-radius:20px;
+    width: 5px;
+    height:5px;
+    margin-left: 0.3rem;
+    margin-top: 0.59rem;
+    
+}
+
+.msg{
+    width:47ch;
+}
