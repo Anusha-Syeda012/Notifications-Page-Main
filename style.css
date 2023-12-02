@@ -42,7 +42,6 @@
 }
 body{
     font-family: var(--font-family-default);
-    /* background-color:brown; */
     background-color: var(--clr-Very-light-grayish-blue);
     display: flex;
     flex-direction: column;
@@ -50,12 +49,14 @@ body{
     justify-content: center;
     min-height: 100vh;
     font-size: 2.5vh;
+    overflow-y:scroll ;
 }
 
 @media screen and (min-width:375px) {
     body{
         max-width: 100vw;
         font-size:3vh;
+        aspect-ratio: 16/9;
     }
 }
 
@@ -67,10 +68,11 @@ main{
     margin: 4rem;
     padding-inline:1.5rem ;
     padding-top: 1.5rem;
-    max-width: 750px;
+    max-width: 800px;
     gap:0.9rem;
     border: 2px solid transparent;
     border-radius: 9px;
+    
 }
 
 /* Header Section */
@@ -158,11 +160,14 @@ summary img{
 
 /* For Chat 5 adding chess image */
 .pic{
-    margin-left: 70px;
+    /* margin-inline-start:12%; */
+    /* margin-left: 70px; */
+    object-position:absolute;
     object-fit: contain;
+    justify-self:flex-end;
 
 }
-/* Notification From Chat1, Chat2 $ Chat3*/
+/* Notification From Chat1, Chat2 & Chat3*/
 summary > :nth-child(1){
     border: 1px solid transparent;
     border-radius: 8px;
@@ -220,6 +225,7 @@ summary > :nth-child(7){
     margin-top:0.2rem;
     margin-left: 3.1rem;
     font-size:80%;
+    width: 47ch;
     color: var(--Grayish-blue);
     
 }
@@ -235,4 +241,22 @@ summary > :nth-child(7){
 
 .msg{
     width:47ch;
+    /* font-size:100%; */
 }
+
+
+.sub-div{
+    border: 1px solid var(--Light-grayish-blue2);
+    border-radius: 3px;
+    padding: 0.9rem;
+    margin-top:0.2rem;
+    margin-left: 3.1rem;
+    font-size: 1.5vw;
+    /* font-size: 3vmin; */
+    /* font-size:1.28rem; */
+    width: 37ch;
+    color: var(--Grayish-blue);
+}
+
+
+

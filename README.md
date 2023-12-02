@@ -11,14 +11,14 @@
 - [Author](#author)
 
 ## Overview
-  The Task was to create the Notifications Page component, using any resources but here i have used the basic concepts of HTML and CSS for my project. I have created it for the specified width screens for desktop view and laptop view that was mentioned in the README.md file of Frontend mentor. Moreover i followed there recommendations for font-size, font-family, font-weight , backround colors and etc.
+  The Task was to create the Notifications Page component, using any resources but here i have used the basic concepts of HTML and CSS for my project. I have created it for the specified width screens for desktop and laptop view that was mentioned in the README.md file of Frontend mentor. Moreover i followed there recommendations for font-size, font-family, font-weight , backround colors and etc.
 
 ### Screenshot
 Here are my both Desktop and Laptop views of the Results Summary Component.
 
-![Desktop-View]()
+![Desktop-View](https://i.imgur.com/4GP3B7B.jpg)
 
-![Laptop-View]()
+![Laptop-View](https://i.imgur.com/Rp3aIpN.png)
 
 
 
@@ -28,7 +28,7 @@ Here are my both Desktop and Laptop views of the Results Summary Component.
 
 
 ## My process
-I have divided my task into three steps. First, I built the layout using Figma and structured my HTML. Second, I created custom CSS for the layout, incorporating necessary grid and flexbox settings, relevant fonts and font sizes, background colors, text alignments, images, favicon, etc. Third, I set screen sizes for each view (Desktop,Laptop and Mobile). In the final step, I commented on the code to enhance understanding. Additionally, I maintained my repository on my GitHub account.
+I have divided my task into three steps. First, I built the layout using Figma and structured my HTML. Second, I created custom CSS for the layout, incorporating necessary grid and flexbox settings, relevant fonts and font sizes, background colors, text alignments, images, favicon, etc. Third, I set screen sizes for each view (Desktop,Laptop). In the final step, I commented on the code to enhance understanding. Additionally, I maintained my repository on my GitHub account.
 
 ### Built with
 
